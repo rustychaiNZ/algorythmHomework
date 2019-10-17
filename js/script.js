@@ -12,8 +12,6 @@ var projectAverage = [];
 document.getElementById('submitE').addEventListener('click', function() {
 	// Records the name inputted by the user
 	var individualName = document.getElementById('eName').value;
-	console.log(individualName);
-
 	// Records results for project A
 	var projA = parseInt(document.getElementById('projectA').value);
 	// Records results for project B
@@ -49,6 +47,32 @@ document.getElementById('btnBestEmployee').addEventListener('click', function(){
 		}
 	}
 	document.getElementById('bestEmployee').innerHTML = bestEmployee;
+});
+
+// Click to reassign employee
+// Doesen't work if employ has
+document.getElementById('btnEmployeeAsignment').addEventListener('click', function(){
+	
+	// Clears outputs if more names are added to the array so dupilicates don't pop up
+	document.getElementById('upForPromotion').innerHTML = '';
+	document.getElementById('staticEmployee').innerHTML = '';
+	document.getElementById('firedEmployee').innerHTML = '';
+
+		// Loop that loops as many time as there are entries in the array
+	for(var j=0; j<=projectAverage.length; j++) {
+		// Find who is up for promotion
+		if(90 <= projectAverage[j]) {
+			document.getElementById('upForPromotion').innerHTML += eName[j] + '<br>';
+		}
+		// Finds who is still doing the same job
+		else if(66 <= projectAverage[j]) {
+			document.getElementById('staticEmployee').innerHTML += eName[j] + '<br>';
+		}
+		// Finds who is fired
+		else if(65.99 > projectAverage[j]){
+			document.getElementById('firedEmployee').innerHTML += eName[j] + '<br>';
+		}
+	}
 });
 
 

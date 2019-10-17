@@ -57,15 +57,38 @@
 				<!-- Employee results -->
 				<br>
 				<h2>Employee Results</h2>
-				<div id="employeeResults" class="jumbotron bg-danger">
+				<div id="employeeResults" class="jumbotron bg-dark">
 					
 				</div>
 			</form>
 
 			<h2>Outstanding Employee Results</h2>
+			<!-- Button that finds the outstanding employee -->
 			<button class="btn btn-lg btn-info" id="btnBestEmployee">Click</button>
 			<br><br>
 			<h4 class="bg-info text-center" id="bestEmployee"></h4>
+
+			
+			<h2>Employee Future Assignments</h2>
+			<!-- Employees up for promotion -->
+			<button class="btn btn-lg btn-info" id="btnEmployeeAsignment">Click</button>
+			<br><br>
+			<div class="row">
+				<div class="col-md-4 bg-secondary">
+					<h3 class="text-center">Promotion</h3>
+					<p id="upForPromotion"></p>
+				</div>
+				<!-- Employees staying where they are -->
+				<div class="col-md-4 bg-secondary">
+					<h3 class="text-center">Still Employed</h3>
+					<p id="staticEmployee"></p>
+				</div>
+				<!-- Exemployess -->
+				<div class="col-md-4 bg-secondary">
+					<h3 class="text-center">YOU'RE FIRED!!!</h3>
+					<p id="firedEmployee"></p>
+				</div>
+			</div>
 			
 		<!-- End of container -->
 		</div>

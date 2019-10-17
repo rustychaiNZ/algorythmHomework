@@ -13,9 +13,24 @@ body{
 .container p,h2,h3,h4,h5,h6{
 	color: #333;
 }
+h4{
+	padding: 15px 0;
+}
+.row{
+	margin: auto;
+}
 .form-output{
 	margin: 10px 0;
 }
-.bg-danger{
+.bg-dark{
 	color: white;
+}
+.bg-secondary h3{
+	color: white;
+}
+.bg-secondary p{
+	color: white;
+}
+.assignment-con-dark{
+
 }
