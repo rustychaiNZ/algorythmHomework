@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<link rel="stylesheet" href="css/stylesheet.css">
 
-		<title>Algorythm Homweork</title>
+		<title>Forms and JS</title>
 	</head>
 	<body>
 
@@ -18,11 +18,56 @@
 		</div>
 
 		<div class="container bg-light">
-			<h2>Average Performance of Employees</h2>
-			<p id="averagePerformance"></p>
 
-			<h2>Outstanding Employee</h2>
-			<p id="outstandingEmployee">
+			<!-- Employee Performance Assessment -->
+			<h2>Employee Performance Form</h2>
+			<form id="employeeForm">
+				<div class="row">
+					<!-- Name of the employee -->
+					<div class="col-12">
+						<label for="eName">Employee Name</label>
+						<input type="text" id="eName" class="form-control" placeholder="Enter employee name">
+					</div>
+					<!-- Input for Project A -->
+					<div class="col-md-6">
+						<label for="projectA">Project A</label>
+						<input type="text" id="projectA" class="form-control" min="1" max="100" placeholder="Enter Performance Number Project A">
+					</div>
+					<!-- Input for project B -->
+					<div class="col-md-6">
+						<label for="projectB">Project B</label>
+						<input type="text" id="projectB" class="form-control" min="1" max="100" placeholder="Enter Performance Number Project B">
+					</div>
+					<!-- Input for Project C -->
+					<div class="col-md-6">
+						<label for="projectC">Project C</label>
+						<input type="text" id="projectC" class="form-control" min="1" max="100" placeholder="Enter Performance Number Project C">
+					</div>
+
+					<!-- Will not be an input -->
+					<div class="col-md-6">
+						<label for="projectAverage">Project Avearage</label>
+						<input type="text" id="projectAverage" class="form-control" min="1" max="100" placeholder="Will be calculated at the end" readonly>
+					</div>
+				</div>
+				<br>
+				<!-- Submit button for employee work effiency -->
+				<button type="button" class="btn btn-lg btn-info" id="submitE">Submit</button>
+				<br>
+				<!-- Employee results -->
+				<br>
+				<h2>Employee Results</h2>
+				<div id="employeeResults" class="jumbotron bg-danger">
+					
+				</div>
+			</form>
+
+			<h2>Outstanding Employee Results</h2>
+			<button class="btn btn-lg btn-info" id="btnBestEmployee">Click</button>
+			<br><br>
+			<h4 class="bg-info text-center" id="bestEmployee"></h4>
+			
+		<!-- End of container -->
 		</div>
 
 		<!-- Optional JavaScript -->
