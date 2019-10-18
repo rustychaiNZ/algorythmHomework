@@ -43,14 +43,13 @@ document.getElementById('btnBestEmployee').addEventListener('click', function(){
 		// Condition - finds the biggest figure in the projectaverage array and compares it to the best employee variable
 		if(bestEmployee < projectAverage[i]){
 			// changes the value of the best employee variable to the project avearge figure and includes the name of the employee that got the corresponding score
-			bestEmployee = projectAverage[i] + '% ' + eName[i];
+			bestEmployee = projectAverage[i] + '% - ' + eName[i];
 		}
 	}
 	document.getElementById('bestEmployee').innerHTML = bestEmployee;
 });
 
 // Click to reassign employee
-// Doesen't work if employ has
 document.getElementById('btnEmployeeAsignment').addEventListener('click', function(){
 	
 	// Clears outputs if more names are added to the array so dupilicates don't pop up
